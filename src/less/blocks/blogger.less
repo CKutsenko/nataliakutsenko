@@ -4,17 +4,35 @@
   &__title {
     text-transform: uppercase;
     font-size: 20px;
+    font-family: @opensans;
   }
 
   &__text {
     font-size: 16px;
+
+    &:last-of-type{
+      padding-bottom: 12px;
+    }
   }
 
   &__subscribe {
-    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: @opensans;
   }
 
   &__btn {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #98cf2e;
+    border: 1px solid #999596;
+    transition: .5s ease;
 
+    &:hover {
+      background-color: #709626;
+    }
   }
 }
