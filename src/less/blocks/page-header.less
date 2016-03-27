@@ -1,0 +1,45 @@
+.page-header {
+  height: 100px;
+  background-color: #7b4954;
+  position: relative;
+  overflow: hidden;
+
+
+  &__logo {
+    height: 150px;
+    position: absolute;
+    top: -27px;
+  }
+}
+
+.main-nav {
+  padding-left: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__item {
+    display: inline-block;
+    padding-top: 25px;
+  }
+
+  &__link {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffdca2;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+
+    &:hover {
+      color: #fdb966;
+      border-bottom: 1px solid #fdb966;
+    }
+  }
+}
