@@ -7,7 +7,23 @@
 
   &__title {
     font-family: @opensans;
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 10px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    text-align: left;
+
+    @media (min-width: @screen-sm) {
+      font-size: 17px;
+    }
   }
 }
+
+
+
