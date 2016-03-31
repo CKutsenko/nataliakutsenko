@@ -1,19 +1,42 @@
 .training {
   padding: 25px 0;
+  text-align: center;
+
+  &__inner {
+    @media (min-width: @screen-md) {
+      text-align: left;
+    }
+  }
 
   &__img {
     padding-top: 18px;
+
+    @media (min-width: @screen-sm) {
+      max-height: 250px;
+    }
+    @media (min-width: @screen-md) {
+      height: 100%;
+    }
   }
 
   &__title {
     font-family: @opensans;
-    font-size: 26px;
     margin-top: 10px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 26px;
+    }
   }
 
   &__text {
     &--last {
       margin-bottom: 25px;
+    }
+    font-size: 14px;
+    text-align: left;
+
+    @media (min-width: @screen-sm) {
+      font-size: 17px;
     }
   }
 
@@ -26,6 +49,11 @@
     background-color: #6f4954;
     border: 1px solid #999596;
     transition: .5s ease;
+    font-size: 14px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 17px;
+    }
 
     &:hover {
       background-color: #fd666d;
