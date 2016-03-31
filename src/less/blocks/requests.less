@@ -4,8 +4,12 @@
 
   &__title {
     font-family: @opensans;
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 10px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 26px;
+    }
   }
 
   &__item {
@@ -13,6 +17,11 @@
     position: relative;
     padding: 5px;
     text-align: left;
+    font-size: 14px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 16px;
+    }
   }
 
   &__img {
