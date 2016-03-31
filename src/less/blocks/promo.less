@@ -2,21 +2,31 @@
   text-align: center;
 
   &__inner {
-    text-align: left;
     padding: 20px;
     font-family: @opensans;
-    color: #000
+    color: #000;
+
+   @media (min-width: @screen-sm) {
+    text-align: left;
+   }
   }
 
   &__title-text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
+
+  @media (min-width: @screen-sm) {
+    font-size: 20px;
+   }
   }
 
   &__text {
+    font-size: 16px;
+    text-align: left;
+  @media (min-width: @screen-sm) {
     font-size: 18px;
+   }
   }
-
 }
 

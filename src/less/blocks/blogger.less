@@ -1,17 +1,29 @@
 .blogger {
   padding-bottom: 30px;
 
+  &__inner {
+    padding: 20px;
+  }
+
   &__title {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 17px;
     font-family: @opensans;
+
+  @media (min-width: @screen-sm) {
+    font-size: 20px;
+   }
   }
 
   &__text {
-    font-size: 16px;
+    font-size: 14px;
 
     &:last-of-type{
       padding-bottom: 12px;
+    }
+
+    @media (min-width: @screen-sm) {
+      font-size: 16px;
     }
   }
 
@@ -27,12 +39,27 @@
     text-transform: uppercase;
     padding: 10px 15px;
     font-weight: bold;
-    background-color: #98cf2e;
+    background-color: #6f4954;
     border: 1px solid #999596;
     transition: .5s ease;
 
     &:hover {
-      background-color: #709626;
+      background-color: #ef6d6b;
     }
   }
+}
+
+#elem_table_element_header {
+  min-width: 280px;
+      @media (min-width: @screen-sm) {
+      min-width: 320px;
+    }
+}
+
+.sr-box {
+    min-width: 280px;
+      @media (min-width: @screen-sm) {
+      min-width: 320px;
+    }
+
 }

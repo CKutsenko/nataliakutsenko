@@ -1,8 +1,18 @@
 .index-bgr {
-  background-image: url(../img/promo.jpg);
-  min-height: 210px;
-  background-position: 55% 50%;
-  background-size: cover;
+  display: none;
+
+   @media (min-width: @screen-md) {
+    display: block;
+    background-image: url(../img/promo.jpg);
+    min-height: 210px;
+    background-position: 52% 50%;
+    background-size: cover;
+  }
+
+
+  @media (min-width: @screen-lg) {
+    background-position: 55% 50%;
+  }
 
   &--small {
     min-height: 120px;
