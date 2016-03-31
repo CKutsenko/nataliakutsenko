@@ -4,21 +4,39 @@
 
   &__title {
     font-family: @opensans;
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 10px;
+    @media (min-width: @screen-sm) {
+      font-size: 26px;
+    }
   }
 
   &__icon {
-    padding-top: 45px;
+    max-height: 120px;
+
+    @media (min-width: @screen-sm) {
+      padding-top: 45px;
+      max-height: 300px;
+    }
   }
 
   &__inner {
-    text-align: left;
+    @media (min-width: @screen-sm) {
+      text-align: left;
+    }
   }
 
   &__inner-title {
     font-family: @opensans;
     font-size: 20px;
     margin-top: 10px;
+  }
+
+  &__inner-text {
+    text-align: left;
+    font-size: 14px;
+    @media (min-width: @screen-sm) {
+      font-size: 16px;
+    }
   }
 }
