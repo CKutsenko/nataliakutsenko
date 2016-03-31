@@ -1,5 +1,10 @@
 .review {
   padding: 25px 0;
+  text-align: center;
+
+    @media (min-width: @screen-md) {
+      text-align: left;
+    }
 
   &--bgr {
     background-color: rgba(111, 73, 84, .6);
@@ -15,7 +20,19 @@
 
   &__name {
     font-family: @opensans;
-    font-size: 26px;
     margin-top: 10px;
+    font-size: 22px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+
+    @media (min-width: @screen-sm) {
+      font-size: 17px;
+    }
   }
 }
