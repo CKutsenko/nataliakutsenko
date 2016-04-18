@@ -1,9 +1,14 @@
 .promo {
   text-align: center;
 
+  &__img {
+  @media (min-width: @screen-sm) {
+    padding-top: 27px;
+   }
+  }
+
   &__inner {
     padding: 20px;
-    font-family: @opensans;
     color: #000;
 
    @media (min-width: @screen-sm) {
@@ -15,6 +20,7 @@
     font-weight: bold;
     font-size: 17px;
     text-transform: uppercase;
+    font-family: @opensans;
 
   @media (min-width: @screen-sm) {
     font-size: 20px;
@@ -24,6 +30,10 @@
   &__text {
     font-size: 16px;
     text-align: left;
+
+    &--right {
+      text-align: right;
+    }
   @media (min-width: @screen-sm) {
     font-size: 18px;
    }

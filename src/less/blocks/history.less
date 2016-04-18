@@ -1,8 +1,19 @@
 .history {
   padding: 25px 0;
+  text-align: center;
+
+    @media (min-width: @screen-sm) {
+      text-align: left;
+    }
 
   &__img {
-    padding-top: 18px;
+    padding-top: 20px;
+    max-height: 400px;
+
+    @media (min-width: @screen-sm) {
+      padding-top: 70px;
+      max-height: 1000px;
+    }
   }
 
   &__title {

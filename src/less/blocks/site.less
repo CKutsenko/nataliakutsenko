@@ -1,0 +1,35 @@
+.site {
+  padding: 15px 0;
+  text-align: center;
+
+  &__title {
+    font-family: @opensans;
+    font-size: 22px;
+    margin-top: 10px;
+    @media (min-width: @screen-sm) {
+      font-size: 26px;
+    }
+  }
+
+  &__inner {
+    text-align: left;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  &__item {
+    padding: 15px 0 15px 50px;
+
+    a {
+      color: #613942;
+      font-style: bold;
+
+      &:hover {
+        color: #fd8f52;
+      }
+    }
+  }
+}
